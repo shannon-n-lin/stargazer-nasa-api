@@ -9,7 +9,9 @@ function getFetch(){
         .then(data => {
           console.log(data)
 
+          // display name of media file
           document.getElementById('name').innerText = data.title
+          // display explanation text
           document.getElementById('description').innerText = data.explanation
 
           if (data.media_type == 'image') {
@@ -23,9 +25,6 @@ function getFetch(){
             // hide any image from previous query
             document.querySelector('img').style.display = 'none'
           }
-
-          console.log(data.url)
-          console.log(data.hdurl)
 
         })
         .catch(err => {
