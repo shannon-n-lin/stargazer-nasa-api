@@ -76,8 +76,8 @@ section.info {
     background-color: rgba(0, 0, 0, 0.7);
     line-height: 1.3rem;
     max-height: 555px;
-    overflow: auto;  /* independent scroll for info as needed 
-                        examples: 01-02-2021, 01-12-2021 */
+    /* independent scroll for info as needed, e.g. 01-02-2021, 01-12-2021 */
+    overflow: auto;  
     -ms-overflow-style: none;  /* hide scrollbar for IE, Edge */
     scrollbar-width: none;  /* hide scrollbar for Firefox */
 }
