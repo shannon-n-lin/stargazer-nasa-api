@@ -44,11 +44,18 @@ h2 {
 h3 {
     font-size: 1rem;
 }
-p {
+p, li {
     font: 600 1rem 'Tenor Sans', Helvetica, sans-serif;
 }
 .hidden {
     display: none;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 300px;
 }
 
 /******************************************
@@ -58,8 +65,14 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+header, main {
     width: 1070px;
     margin: auto;
+}
+main {
+    min-height: 725px;
 }
 section.datePicker {
     display: flex;
@@ -108,6 +121,14 @@ section.infoHeader {
 }
 iframe {
     height: 550px;
+}
+footer {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url('/css/assets/unsplash_Yj1M5riCKk4.svg');
+    background-size: cover;
 }
 
 /******************************************
