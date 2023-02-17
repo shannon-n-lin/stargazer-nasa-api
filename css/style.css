@@ -47,6 +47,9 @@ h3 {
 p {
     font: 600 1rem 'Tenor Sans', Helvetica, sans-serif;
 }
+.hidden {
+    display: none;
+}
 
 /******************************************
 /* LAYOUT

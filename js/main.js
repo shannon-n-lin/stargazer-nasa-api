@@ -1,3 +1,4 @@
+document.getElementById('date').valueAsDate = new Date();
 document.getElementById('submitDate').addEventListener('click', getFetch)
 
 function getFetch(){
@@ -11,6 +12,9 @@ function getFetch(){
 
           // display name of media file
           document.getElementById('name').innerText = data.title
+
+          // show icon for toggle description button
+          document.getElementById('toggleDescription').classList.toggle('hidden')
 
           // display image or video
           if (data.media_type == 'image') {
