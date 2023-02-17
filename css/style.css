@@ -1,21 +1,44 @@
-/******************************************
-/* CSS
-/*******************************************/
-
 /* Box Model Hack */
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-transform: uppercase;
+}
 img {
     display: none;
     margin: 0 auto;
     height: 400px;
 }
-
 iframe {
     display: none;
     margin: 0 auto;
