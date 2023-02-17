@@ -92,6 +92,9 @@ section.infoHeader {
     flex-flow: row;
     justify-content: space-between;
 }
+#toggleDescription {
+    margin-left: 15px;
+}
 .rotate {
     transform: rotate(180deg);
 }
