@@ -20,8 +20,18 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-
+html {
+    font-size: 16px;
+}
+h1, button, input {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
 
 /******************************************
 /* LAYOUT
@@ -31,8 +41,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-h2 {
-    text-transform: uppercase;
+section.datePicker {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 img {
     display: none;
@@ -43,7 +55,6 @@ iframe {
     display: none;
     margin: 0 auto;
 }
-
 
 /******************************************
 /* ADDITIONAL STYLES
