@@ -23,6 +23,8 @@
 html {
     font-size: 16px;
     font-family: 'Orbitron', Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000
 }
 h1, button, input {
     font-weight: 700
