@@ -68,12 +68,21 @@ section.results {
 }
 section.info {
     width: 40%;
-    padding: 30px 100px 30px 40px;
+    padding: 30px 100px 20px 40px;
     position: fixed; 
     right: 0px;
     bottom: 0px;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7)
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 1.3rem;
+    max-height: 555px;
+    overflow: auto;  /* independent scroll for info as needed 
+                        examples: 01-02-2021, 01-12-2021 */
+    -ms-overflow-style: none;  /* hide scrollbar for IE, Edge */
+    scrollbar-width: none;  /* hide scrollbar for Firefox */
+}
+section.info::-webkit-scrollbar {
+    display: none; /* hide scrollbar for Chrome, Safari, Opera */
 }
 .media {
     display: none;
