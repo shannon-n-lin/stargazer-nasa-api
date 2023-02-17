@@ -15,8 +15,8 @@ function getFetch(){
           document.getElementById('description').innerText = data.explanation
 
           if (data.media_type == 'image') {
-            document.querySelector('img').style.display = 'block'
-            document.querySelector('img').src = data.url
+            document.getElementById('mediaImg').style.display = 'block'
+            document.getElementById('mediaImg').src = data.url
             // hide any video from previous query
             document.querySelector('iframe').style.display = 'none'
           } else if (data.media_type == 'video') {
@@ -31,3 +31,7 @@ function getFetch(){
             console.log(`error ${err}`)
         });
   }
+
+
+
+  document.getElementById('description').style.display = 'block'
