@@ -29,6 +29,10 @@ function getFetch(){
           document.getElementById('toggleDescription').addEventListener('click', toggleDescription)
 
           function toggleDescription() {
+            // flip button vertically
+            document.getElementById('toggleDescription').classList.toggle('rotate')
+
+            // add or erase description
             if (document.getElementById('description').innerText.length == 0) {
               document.getElementById('description').innerText = data.explanation
             } else {
