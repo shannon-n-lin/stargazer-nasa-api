@@ -9,7 +9,7 @@ function getFetch(){
         .then(data => {
           console.log(data)
 
-          document.querySelector('h2').innerText = data.title
+          document.getElementById('name').innerText = data.title
           document.getElementById('description').innerText = data.explanation
 
           if (data.media_type == 'image') {
