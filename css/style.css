@@ -89,9 +89,6 @@ section.infoHeader {
     flex-flow: row;
     justify-content: space-between;
 }
-#description {
-    display: none;
-}
 .media {
     display: none;
     margin: 0 auto;

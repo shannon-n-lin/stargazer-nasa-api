@@ -11,9 +11,8 @@ function getFetch(){
 
           // display name of media file
           document.getElementById('name').innerText = data.title
-          // display explanation text
-          document.getElementById('description').innerText = data.explanation
 
+          // display image or video
           if (data.media_type == 'image') {
             document.getElementById('mediaImg').style.display = 'block'
             document.getElementById('mediaImg').src = data.url
@@ -24,6 +23,17 @@ function getFetch(){
             document.querySelector('iframe').src = data.url
             // hide any image from previous query
             document.querySelector('img').style.display = 'none'
+          }
+
+          // button to show or hide description
+          document.getElementById('toggleDescription').addEventListener('click', toggleDescription)
+
+          function toggleDescription() {
+            if (document.getElementById('description').innerText.length == 0) {
+              document.getElementById('description').innerText = data.explanation
+            } else {
+              document.getElementById('description').innerText = ''
+            }
           }
 
         })
